@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yeet</title>
+	<style type="text/css">
+		body, html{
+			height:100%;
+			margin:0;
+			background-color: #7ba2c3;
+			font-size:62.5%;
+		}
+		.bg{
+			height:100%;
+			background-image: url('background.png');
+			background-position:center;
+			background-repeat: no-repeat;
+			background-size:cover;
+
+			display:grid;
+			grid-template-rows: auto;
+			grid-template-rows: 30% 70%;
+		}
+		
+		.row{
+			display:flex;
+			flex-wrap:wrap;
+			grid-row:2;
+			padding:0 4px;
+			align-items:center;
+		}
+		.column{
+			flex:30%;
+			max-width:25%;
+			padding:0 4%;
+		}
+		@media screen and (max-width:600px){
+			.column{
+				flex:100%;
+				max-width:100%;
+			}
+			.bg{
+				grid-template-rows: 20% 80%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="bg">
+		<h1>Bilder</h1>
+		<div class="row">
+			<div class="column"><img src="jag.png" alt="Nehepp"></div>
+			<div class="column"><img src="glau.png" alt="Jahaa"></div>
+			<div class="column"><img src="log.png" alt="Hepp"></div>
+		</div>
+	</main>
+</body>
+</html>
